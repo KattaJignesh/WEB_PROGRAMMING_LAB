@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE5077</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .row-1 { background-color: red; color: white; }
+        .row-2 { background-color: pink; }
+        .row-3 { background-color: blue; color: white; }
+        .row-4 { background-color: green; color: white; }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="showTable()">Expenses</a>
+
+    <table id="expensesTable" class="hidden">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Quarter</th>
+                <th colspan="2">Expenses</th>
+                <th colspan="2">Income</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Quetta</th>
+                <th>Dubai</th>
+                <th>Quetta</th>
+                <th>Dubai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">2021</td>
+                <td class="row-1">1</td>
+                <td class="row-1">1,900</td>
+                <td class="row-1">8,650</td>
+                <td class="row-1">9,000</td>
+                <td class="row-1">7,780</td>
+            </tr>
+            <tr>
+                <td class="row-2">2</td>
+                <td class="row-2">2,230</td>
+                <td class="row-2">8,650</td>
+                <td class="row-2">8,500</td>
+                <td class="row-2">8,670</td>
+            </tr>
+            <tr>
+                <td class="row-3">3</td>
+                <td class="row-3">4,000</td>
+                <td class="row-3">8,650</td>
+                <td class="row-3">9,900</td>
+                <td class="row-3">9,870</td>
+            </tr>
+            <tr>
+                <td class="row-4">4</td>
+                <td class="row-4">2,200</td>
+                <td class="row-4">8,650</td>
+                <td class="row-4">9,800</td>
+                <td class="row-4">9,900</td>
+            </tr>
+            <tr>
+                <td rowspan="4">2022</td>
+                <td class="row-1">1</td>
+                <td class="row-1">7,780</td>
+                <td class="row-1">8,650</td>
+                <td class="row-1">7,780</td>
+                <td class="row-1">9,000</td>
+            </tr>
+            <tr>
+                <td class="row-2">2</td>
+                <td class="row-2">8,670</td>
+                <td class="row-2">8,650</td>
+                <td class="row-2">8,670</td>
+                <td class="row-2">8,500</td>
+            </tr>
+            <tr>
+                <td class="row-3">3</td>
+                <td class="row-3">9,870</td>
+                <td class="row-3">8,650</td>
+                <td class="row-3">9,870</td>
+                <td class="row-3">9,900</td>
+            </tr>
+            <tr>
+                <td class="row-4">4</td>
+                <td class="row-4">9,900</td>
+                <td class="row-4">8,650</td>
+                <td class="row-4">9,900</td>
+                <td class="row-4">9,800</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td colspan="5">****</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function showTable() {
+            document.getElementById("expensesTable").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>

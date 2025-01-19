@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>23BCE5077</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .outermost {
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .level-2 {
+            background-color: yellow;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .level-3 {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .level-4 {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .level-5 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .test-table {
+            margin-top: 20px;
+            display: none;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #23BCE5077JIG;
+        }
+        .test-table th, .test-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .clickable {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function showTable() {
+            document.getElementById("testTable").style.display = "table";
+        }
+    </script>
+</head>
+<body>
+    <div class="outermost">
+        <div class="level-2">
+            <div class="level-3">
+                <div class="level-4">
+                    <div class="level-5">
+                        <span class="clickable" onclick="showTable()">Click Me</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table id="testTable" class="test-table">
+        <tr>
+            <th colspan="4">A test table with merged cells</th>
+        </tr>
+        <tr>
+            <th rowspan="2"><a href="#">Expenses</a></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red eyes</th>
+        </tr>
+        <tr>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <td>Males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+</body>
+</html>
