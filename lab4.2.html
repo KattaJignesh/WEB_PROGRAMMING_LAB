@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+</head>
+<body>
+    <h2 style="color: red;">Personal Details</h2>
+    <form>
+        <!-- Personal Details Section -->
+        <label>Name:</label>
+        <input type="text" name="name"><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password"><br><br>
+
+        <label>E-mail id:</label>
+        <input type="email" name="email"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <label>DOB:</label>
+        <input type="date" name="dob"><br><br>
+
+        <label>Mobile#:</label>
+        <input type="tel" name="mobile"><br><br>
+
+        <!-- Educational Qualification Section -->
+        <h2 style="color: red;">Educational Qualification</h2>
+        <label>Degree:</label>
+        <select>
+            <optgroup label="UG">
+                <option>BE</option>
+                <option>BTech</option>
+                <option>BSc</option>
+                <option>BA</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>Others</option>
+            </optgroup>
+            <optgroup label="PG">
+                <option>ME</option>
+                <option>MTech</option>
+                <option>MSc</option>
+                <option>MA</option>
+                <option>MCA</option>
+                <option>MBA</option>
+                <option>Others</option>
+            </optgroup>
+            <optgroup label="PhD">
+                <option>Engineering</option>
+                <option>Science</option>
+                <option>Management</option>
+                <option>Others</option>
+            </optgroup>
+        </select>
+
+        <label>Engineering:</label>
+        <select>
+            <option>-- Select Group --</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>CIVIL</option>
+            <option>MECH</option>
+        </select><br><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobby" value="Playing chess"> Playing chess
+        <input type="checkbox" name="hobby" value="Reading Books"> Reading Books<br><br>
+
+        <label>Favourite Color:</label>
+        <input type="color" name="color"><br><br>
+
+        <!-- Address Section -->
+        <h3>Address</h3>
+        <textarea rows="4" cols="50"></textarea><br><br>
+
+        <!-- File Upload -->
+        <label>Attach Resume:</label>
+        <input type="file" name="resume"><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

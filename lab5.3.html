@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE5077</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        svg {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My House using SVG</h1>
+    <svg width="200" height="250" xmlns="http://www.w3.org/2000/svg">
+        <!-- House base -->
+        <rect x="50" y="100" width="100" height="100" fill="#8B4513" stroke="black"/>
+
+        <!-- Roof -->
+        <polygon points="50,100 100,50 150,100" fill="#8B0000" stroke="black"/>
+
+        <!-- Windows -->
+        <rect x="60" y="110" width="25" height="25" fill="#ADD8E6" stroke="black"/>
+        <rect x="115" y="110" width="25" height="25" fill="#ADD8E6" stroke="black"/>
+
+        <!-- Door -->
+        <rect x="90" y="150" width="20" height="50" fill="#654321" stroke="black"/>
+
+        <!-- Door step -->
+        <rect x="85" y="200" width="30" height="10" fill="#A9A9A9" stroke="black"/>
+
+        <!-- Circular window on the roof -->
+        <circle cx="100" cy="80" r="10" fill="#FFD700" stroke="black"/>
+
+        <!-- Star -->
+        <polygon points="130,20 133,28 140,28 135,32 137,40 130,35 123,40 125,32 120,28 127,28" fill="#FFD700" stroke="black"/>
+
+        <!-- Crescent moon -->
+        <path d="M150,50 A15,15 0 1,1 130,50 A10,10 0 1,0 150,50" fill="#FFFACD" stroke="black"/>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE5077</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            width: 220px;
+            margin: 20px auto;
+        }
+        section {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <section id="audio">
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="audio-file.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section id="video">
+            <h2>Video</h2>
+            <video controls width="200">
+                <source src="video-file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section id="canvas">
+            <h2>Canvas</h2>
+            <canvas id="laptopCanvas" width="200" height="150"></canvas>
+        </section>
+    </nav>
+    <script>
+        const canvas = document.getElementById('laptopCanvas');
+        const ctx = canvas.getContext('2d');
+    
+        const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        gradient.addColorStop(0, '#8B0000');
+        gradient.addColorStop(1, '#FF4500');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+        ctx.fillStyle = '#000000';
+        ctx.fillRect(20, 20, 160, 100);
+    
+        ctx.fillStyle = '#FFFF00';
+        ctx.beginPath();
+        ctx.arc(100, 70, 30, 0, Math.PI * 2);
+        ctx.fill();
+    
+        ctx.fillStyle = '#A9A9A9';
+        ctx.fillRect(60, 130, 80, 10);
+    </script>
+</body>
+</html>
